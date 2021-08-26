@@ -15,7 +15,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Open+Sans:wght@300;400&display=swap"
         rel="stylesheet">
 
+    <script>
+        function showModal(){
+            var element = document.getElementById("modal");
+            element.classList.add("show-modal");
+        }
 
+        function hideModal(){
+            var element = document.getElementById("modal");
+            element.classList.remove("show-modal");
+        }
+
+    </script>
 
 </head>
 
@@ -92,18 +103,47 @@
 
             <div class='grid'>
 
+                    <div onclick="showModal()" class='gallery-img'>
+                        <img src="assets/img/pj1.png" alt="random">
+                    </div>
 
-                <div class='gallery-img'>
-                    <img src="assets/img/pj1.png" alt="random">
-                </div>
+                    <div id="modal" class="popup" >
+                        <div class="modal-content">
+                            <span onclick="hideModal()">&times;</span>
+                            <h5>AG 1213 - Porto Alegre</h5>
+                            <p>Espaços compactos e compartilhados estão se tornando cada vez mais uma realidade. A demanda por otimizar os espaços nos levou projetar 
+                                a sala AG 1213 onde nutrição da @nutri_valeriabrito se complementa com estética da @uniquelashed.
+                                Os detalhes de interiores trazem conforto e aconchego para os pacientes e clientes do espaço.</p>
+                        </div>
+                    </div>
 
-                <div class='gallery-img'>
-                    <img src="assets/img/pj2.png" alt="random">
-                </div>
+                    <div onclick="showModal()" class='gallery-img'>
+                        <img src="assets/img/pj2.png" alt="random">
+                    </div>
 
-                <div class='gallery-img'>
-                    <img src="assets/img/pj3.png" alt="random">
-                </div>
+                    <div id="modal" class="popup" >
+                        <div class="modal-content">
+                            <span onclick="hideModal()">&times;</span>
+                            <h5>AG 1213 - Porto Alegre</h5>
+                            <p>Espaços compactos e compartilhados estão se tornando cada vez mais uma realidade. A demanda por otimizar os espaços nos levou projetar 
+                                a sala AG 1213 onde nutrição da @nutri_valeriabrito se complementa com estética da @uniquelashed.
+                                Os detalhes de interiores trazem conforto e aconchego para os pacientes e clientes do espaço.</p>
+                        </div>
+                    </div>
+
+                    <div onclick="showModal()" class='gallery-img'>
+                        <img src="assets/img/pj3.png" alt="random">
+                    </div>
+
+                    <div id="modal" class="popup" >
+                        <div class="modal-content">
+                            <span onclick="hideModal()">&times;</span>
+                            <h5>AG 1213 - Porto Alegre</h5>
+                            <p>Espaços compactos e compartilhados estão se tornando cada vez mais uma realidade. A demanda por otimizar os espaços nos levou projetar 
+                                a sala AG 1213 onde nutrição da @nutri_valeriabrito se complementa com estética da @uniquelashed.
+                                Os detalhes de interiores trazem conforto e aconchego para os pacientes e clientes do espaço.</p>
+                        </div>
+                    </div>
 
                 <div class='gallery-img'>
                     <img src="assets/img/pj21 .png" alt="random">
@@ -230,7 +270,7 @@
                 Vinícius Lavarda</a>
     </footer>
 
-    <a href="#home" class='back-top'>TOP</a>
+    <a href="#home" class='back-top'>⇑</a>
 
     <script src="/assets/js/main.js"></script>
 </body>
